@@ -18,6 +18,8 @@ Data hails from [SQL Course](https://lukebarousse.com/sql). The data includes in
  5. What are the optimal skills a person should spend the most time in developing
  6. What are the top-paying jobs in New York City specifically?
  7. What are the most in-demand skills that jobs are looking for in New York City?
+ 8. Which months had the most job-postings and which months had the least job-postings?
+ 9. What is the most demanded skill in each month? 
 
 # Tools/Technologies Used
  - **SQL** 
@@ -26,14 +28,31 @@ Data hails from [SQL Course](https://lukebarousse.com/sql). The data includes in
  # The Analysis
  ### 1. Top Paying Data Analysis Jobs 
  Enter description 
- ```sql
+ ```
+ SELECT
+    job_id,
+    job_title, 
+    job_location, 
+    job_schedule_type,
+    salary_year_avg,
+    job_posted_date,
+    name AS company_name
+FROM
+    job_postings_fact
+LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
+WHERE
+    job_title_short = 'Data Analyst' AND 
+    job_work_from_home =  TRUE AND
+    salary_year_avg IS NOT NULL
+ORDER BY 
+    salary_year_avg DESC
+LIMIT 10
  ```
 Here's the results of the top data analyst jobs in 2023:
  - 
  - 
 
-![Alt Text](url for the assets)
-*Bar Graph
+![Top Paying Jobs](/Users/rness123/Desktop/Projects - Beginner/data-analysis/data-analysis-jobs/assets_results/1_top_paying_jobs)
 
 ** Consider using tables to show findings
 

@@ -27,7 +27,9 @@ Data hails from [SQL Course](https://lukebarousse.com/sql). The data includes in
 
  # The Analysis
  ### 1. Top Paying Data Analysis Jobs 
- Enter description 
+
+This query retrieves the top 10 highest-paying jobs related to Data Analyst in 2023. The results highlight which companies and roles offer the most competitive salaries for Data Analysts working remotely. This can give job seekers, with an interest in data analysis, an idea of what job titles they should be looking out for, should they want the highest paying salary. 
+
  ```
  SELECT
     job_id,
@@ -49,10 +51,30 @@ ORDER BY
 LIMIT 10
  ```
 Here's the results of the top data analyst jobs in 2023:
- - 
- - 
+ - The standard Data Analyst role has the highest average salary, exceeding other data analyst positions, at around $650,000.
+ - Director-level roles, such as Director of Analytics, also have high salaries, though less than the top Data Analyst role, averaging around $330,000.
 
-![Top Paying Jobs](/Users/rness123/Desktop/Projects - Beginner/data-analysis/data-analysis-jobs/assets_results/1_top_paying_jobs)
+<img src="assets_results/top_paying_jobs.png" alt="Top Paying Jobs" width="500px"/>
+
+
+### 2. Top Paying Jobs and Associated Skills 
+
+
+### 3. Skill In Demand
+
+
+### 4. Skills Associated with Highest Paying Job
+
+### 5. Skill Essential to Develop
+
+### 6. NYC Top Paying Job
+
+### 7. NYC Skill In Demand 
+
+### 8. NYC Job Posting Each Month
+
+### 9. NYC Most Demanded Skills Each Month
+
 
 ** Consider using tables to show findings
 

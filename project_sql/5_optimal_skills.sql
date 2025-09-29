@@ -21,7 +21,7 @@ WITH skills_demand AS (
         job_work_from_home = TRUE
     GROUP BY 
         skills_dim.skill_id
-), avg_salary as (
+), avg_salary AS (
     SELECT 
         skills_dim.skill_id,
         skills,

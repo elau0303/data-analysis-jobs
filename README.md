@@ -192,6 +192,8 @@ Here are the results of the top skills associated with the highest-paying remote
 
 ### 6. NYC Top Paying Job
 
+This query highlights the highest-paying job postings located in New York specifically. The results are filtered to only include positions with reported salary data and are ordered from the highest to lowest salary. The query returns the top 20 job postings, providing insight into the most lucrative opportunities in the New York job market and helping job seekers identify employers and roles that offer the best compensation.
+
 ```
 SELECT
     job_title, 
@@ -211,6 +213,8 @@ LIMIT 20
 
 
 ### 7. NYC Skill In Demand 
+
+This query identifies the most in-demand skills for job postings located in New York with reported salary information. By joining job postings with their associated skills, it calculates the number of postings requiring each skill `demand_count`. The results are filtered to include only recent jobs posted after September 1, 2023. The query then returns the top 10 skills ordered by demand, offering valuable insight into the technical competencies most sought after by employers in the New York job market so job seekers know which skills to develop.
 
 ```
 SELECT 
@@ -233,6 +237,8 @@ LIMIT 10
 
 ### 8. NYC Job Posting Each Month
 
+This query tracks the amount of job postings in New York over time by grouping positions according to the month they were posted. Using the `EXTRACT(MONTH FROM job_posted_date)` function, it organizes postings by calendar month and counts the total number of jobs `num_jobs_posted` in each period. The results are sorted chronologically, providing a clear view of how hiring activity fluctuates month by month. This analysis helps reveal hiring patterns and can guide job seekers on when opportunities are most abundant in the New York job market.
+
 ```
 SELECT 
     EXTRACT(MONTH FROM job_posted_date) AS month,
@@ -247,6 +253,8 @@ ORDER BY
 ```
 
 ### 9. NYC Most Demanded Skills Each Month
+
+This query provides a month-by-month view of hiring activity in New York while also identifying the most in-demand skill for each month. It first calculates the total number of job postings per month `jobs_per_month` and then determines how often each skill appears within postings for that month `skills_per_month`. From there, it selects the top skill per month based on the highest demand `skill_demand_count`. Finally, the results combine overall job amount with the leading skill each month, giving both a sense of seasonal hiring trends and the shifting skill priorities of employers in the New York market. This gives job seekers an idea of what to develop for the best chances at landing jobs (or to simply have more options in the job market in 2023).
 
 ```
 WITH jobs_per_month AS (

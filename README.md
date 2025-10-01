@@ -211,6 +211,12 @@ ORDER BY
 LIMIT 20
 ```
 
+This query highlights the top 20 highest-salaried positions in New York. It pulls job titles, average annual salaries, posting dates, and hiring companies.
+- Go tops the list as the skill linked to the highest average salary, significantly above the others.
+- Skills like Confluence, Hadoop, Snowflake, and Azure also show strong earning potential, indicating that expertise in these technologies can help job seekers target more lucrative positions.
+
+<img src="assets_results/top_paying_jobs_nyc.png" alt="Top Paying Jobs NYC" width="500px"/>
+
 
 ### 7. NYC Skill In Demand 
 

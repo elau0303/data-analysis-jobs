@@ -240,6 +240,13 @@ ORDER BY
 LIMIT 10
 ```
 
+Here are the results of the most in-demand skills in New York (since September 2023):
+- SQL leads as the top skill, appearing in the highest number of postings
+- Widely used tools and languages like Excel, Python, and R also rank highly, reflecting their essential role in data analysis work
+- Specialized skills such as Power BI, MySQL, NoSQL, Flow, and MATLAB appear less frequently but highlight additional technologies that may differentiate candidates in the job market
+
+<img src="assets_results/skills-nyc.png" alt="In-demand skills in NYC" width="500px"/>
+
 
 ### 8. NYC Job Posting Each Month
 
@@ -257,6 +264,14 @@ GROUP BY
 ORDER BY 
     month;
 ```
+
+Here are the results of job postings by month in New York:
+- Hiring activity peaked in February (25 postings) and January (22 postings), suggesting the start of the year may bring the most opportunities.
+- The summer months of May (3 postings) and June (9 postings) showed the lowest activity, indicating a slowdown in hiring during this period.
+- Posting levels recovered somewhat in the fall, with November (20 postings) and December (16 postings) marking another active period, showing companies may ramp up hiring before year-end.
+
+<img src="assets_results/Posting_month.png" alt="NYC Job Posting Each Month" width="500px"/>
+
 
 ### 9. NYC Most Demanded Skills Each Month
 
@@ -306,8 +321,13 @@ ORDER BY
     top_skill_per_month.month
 ```
 
+Here are the key insights from the results:
+- SQL dominates throughout the year, ranking as the top skill in six months, particularly strong in the early months (January, February) and fall (October, November).
+- Python emerges as a close competitor, leading in March, August, September, and December, showing its consistent demand across both mid-year and year-end.
+- Other tools also appear seasonally: Excel in May (albeit with low postings) and SAS in July, suggesting occasional niche demand
+- Hiring activity is highest in February (25 postings, SQL-heavy) and lowest in May (3 postings, Excel), showing clear seasonal fluctuations in both job availability and skill demand.
 
-
+<img src="assets_results/skills_posting_jobs.png" alt="NYC Job Posting Each Month" width="500px"/>
 
 
 ### Learnings

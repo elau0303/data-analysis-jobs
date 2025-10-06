@@ -335,9 +335,9 @@ Here are the key insights from the results:
 The New York City job market in 2023 reveals a skill-driven desire, where both timing and technical expertise play a crucial role in job-seeking success. Hiring activity fluctuates seasonally, with early months like January and February, offering the greatest number of opportunities, while the summer months show a noticeable decrease. Across the year, SQL and Python consistently dominate employer demand, emphasizing their importance as foundational skills for data analysts. Meanwhile, tools like Excel, SAS, and Power BI appear intermittently, showing that familiarity with diverse analytical platforms can provide a competitive edge. Altogether, mastering these in-demand skills and understanding when the market is most active can help job seekers strategically position themselves for success in New York’s competitive data job environment.
 
 ### Analysis Results
-1. SQL and Python Lead Skill Demand:
+1. **SQL and Python Lead Skill Demand:**
      SQL remains the most frequently requested skill across multiple months, with Python emerging as a strong counterpart. Both are essential for data analysis and engineering roles in NYC.
-2. Seasonal Hiring Peaks Early in the Year:
+2. **Seasonal Hiring Peaks Early in the Year:**
      Job postings are highest in January and February, suggesting that companies initiate most of their hiring early in the year. This is an optimal period for job seekers to apply and engage with employers.
-3. Niche Skills Show Periodic Demand:
+3. **Niche Skills Show Periodic Demand:**
      While SQL and Python dominate, specialized tools like SAS (July) and Excel (May) appear briefly as top skills, indicating that certain roles or industries may possibly have distinct, time-bound hiring trends for specific technologies. (I would need to explore more data from different years for the job market to make a more accurate conclusion)
